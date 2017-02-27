@@ -19,6 +19,8 @@
 @import 'font-awesome-sprockets';
 @import 'font-awesome';
 
+
+
 // Typography Styles
 h1, h2, h3 {
   font-family: 'Open Sans', sans-serif;
@@ -75,178 +77,186 @@ h1, h2, h3 {
 
 ////////////////////////////////////////////////////////////////////
 
-$gray: #eee;
-$white: #fff;
-$black: #333;
-$active: #E74C3C;
-
-html, body {
-	margin: 0;
-	padding: 0;
-	width: 100%;
-	height: 100%;
-	background-color: $gray;
-	font-family: 'Raleway';
+//@import 'url';
+* {
+		font-family: "Roboto", Arial, sans-serif;
 }
 
-ul, li {
-	margin: 0;
-	padding: 0;
-	list-style: none;
+body {
+		font-size: 1rem;
+		background-color: #ebebeb;
+		padding: 20px;
+		text-align: center;
 }
 
-.icon {
-  	position: relative;
-  	width: 32px;
-  	height: 32px;
-  	display: block;
-  	fill: rgba($black, .5);
-	margin-right: 20px;
-	transition: all .2s ease-out;
+h1 {
+		font-weight: 100;
+		color: #777;
 }
 
-.icon.active {
-	fill: $active;
+.main-wrapper {
+		border-radius: 4px;
+		background-color: white;
+		padding: 20px;
+		box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+		position: relative;
 }
 
-.icon.big {
-	width: 64px;
-	height: 64px;
-	fill: rgba($black, .5);;	
+i.material-icons {
+		font-size: 1.5rem;
+		color: white;
+		position: relative;
+		border-radius: 50%;
+		padding: 5px;
+		margin: 3px;
+		box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+		transition: color 0.2s ease, background-color 0.2s ease, transform 0.3s ease;
 }
 
-#wrapper {
-	width: 900px;
-	height: 400px;
-	position: absolute;
-	top: 0;
-	bottom: 0;
-	left: 0;
-	right: 0;
-	margin: auto;	
-	background-color: $white;
-	box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
-	display: flex;
-  	align-items: center;
-  	justify-content: left;
-	overflow: hidden
-
-}
-
-#left-side {
-	height: 70%;
-	width: 25%;
-	display: flex;
-  	align-items: center;
-  	justify-content: center;
-	
-	ul {
-		
-		li {
-			padding-top: 10px;
-			padding-bottom: 10px;
-			display: flex;
-			line-height: 34px;
-			color: rgba($black, .5);
-			font-weight: 500;
-			cursor: pointer;
-			transition: all .2s ease-out;
-			
-			&:hover {
-				color: rgba($black, 1);
-				transition: all .2s ease-out;
-			}
-			
-			&:hover > .icon {
-				fill: $black;
-			}
-		}
-		
-		li.active {
-			color: rgba($black, 1);
-			
-			&:hover > .icon {
-				fill: $active;
-			}
-		}
-	}
-}
-
-#border {
-	height: 288px;
-	width: 1px;
-	background-color: rgba($black, .2);
-	
-	#line.one {
-		width: 5px;
-		height: 54px;
-		background-color: $active;
-		margin-left: -2px;
-		margin-top: 35px;
-		transition: all .4s ease-in-out;
-	}
-	
-	#line.two {
-		width: 5px;
-		height: 54px;
-		background-color: $active;
-		margin-left: -2px;
-		margin-top: 89px;
-		transition: all .4s ease-in-out;
-	}
-	
-	#line.three {
-		width: 5px;
-		height: 54px;
-		background-color: $active;
-		margin-left: -2px;
-		margin-top: 143px;
-		transition: all .4s ease-in-out;
-	}
-	
-	#line.four {
-		width: 5px;
-		height: 54px;
-		background-color: $active;
-		margin-left: -2px;
-		margin-top: 197px;
-		transition: all .4s ease-in-out;
-	}
-}
-
-#right-side {
-	height: 300px;
-	width: 75%;
-	overflow: hidden;
-	
-	#first, #second, #third, #fourth {
+i.material-icons:after {
+		content: "";
+		width: 100%;
+		height: 100%;
+		border: solid 2px;
+		transform: scale(0.8);
 		position: absolute;
-		height: 300px;
-		width: 75%;
-		transition: all .6s ease-in-out;
-		margin-top: -350px;
-		opacity: 0;
-		display: flex;
-  		align-items: center;
-  		justify-content: center;
-		flex-direction: column;
-		  
-		h1 {
-			font-weight: 800;
-			color: $black;	
-		}
-		
-		p {
-			color: $black;
-			font-weight: 500;
-			padding-left: 30px;
-			padding-right: 30px;
-		}
+		top: -2px;
+		left: -2px;
+		border-radius: 50%;
+		transition: all 0.3s ease;
+}
+
+i.material-icons:hover:after {
+		transform: scale(1);
+		box-shadow: 10px 0 20px rgba(0, 0, 0, 0.19), 6px 0 6px rgba(0, 0, 0, 0.23);
+}
+
+i.material-icons:nth-of-type(4) {
+		background-color: #88b999;
+}
+
+i.material-icons:nth-of-type(4):hover {
+		color: #88b999;
+}
+
+i.material-icons:nth-of-type(4):after {
+		border-color: #88b999;
+}
+
+i.material-icons:nth-of-type(5) {
+		background-color: #88b2b9;
+}
+
+i.material-icons:nth-of-type(5):hover {
+		color: #88b2b9;
+}
+
+i.material-icons:nth-of-type(5):after {
+		border-color: #88b2b9;
+}
+
+i.material-icons:nth-of-type(6) {
+		background-color: #8897b9;
+}
+
+i.material-icons:nth-of-type(6):hover {
+		color: #8897b9;
+}
+
+i.material-icons:nth-of-type(6):after {
+		border-color: #8897b9;
+}
+
+i.material-icons:nth-of-type(7) {
+		background-color: #af88b9;
+}
+
+i.material-icons:nth-of-type(7):hover {
+		color: #af88b9;
+}
+
+i.material-icons:nth-of-type(7):after {
+		border-color: #af88b9;
+}
+
+i.material-icons:nth-of-type(8) {
+		background-color: #d59acb;
+}
+
+i.material-icons:nth-of-type(8):hover {
+		color: #d59acb;
+}
+
+i.material-icons:nth-of-type(8):after {
+		border-color: #d59acb;
+}
+
+i.material-icons:nth-of-type(1) {
+		background-color: #cd8484;
+}
+
+i.material-icons:nth-of-type(1):hover {
+		color: #cd8484;
+}
+
+i.material-icons:nth-of-type(1):after {
+		border-color: #cd8484;
+}
+
+i.material-icons:nth-of-type(2) {
+		background-color: #ec9f83;
+}
+
+i.material-icons:nth-of-type(2):hover {
+		color: #ec9f83;
+}
+
+i.material-icons:nth-of-type(2):after {
+		border-color: #ec9f83;
+}
+
+i.material-icons:nth-of-type(3) {
+		background-color: #cdb274;
+}
+
+i.material-icons:nth-of-type(3):hover {
+		color: #cdb274;
+}
+
+i.material-icons:nth-of-type(3):after {
+		border-color: #cdb274;
+}
+
+i.material-icons:hover {
+		background-color: transparent;
+		transform: rotate(90deg);
+		cursor: pointer;
+		box-shadow: none;
+}
+
+p {
+		color: #999;
+		font-weight: 300;
+		margin-top: 20px;
+}
+
+@media (min-width:601px) {
+	i.material-icons {
+		padding:10px;
+		margin:5px;
+		font-size:2rem;
 	}
-	
-	#first.active, #second.active, #third.active, #fourth.active {
-		margin-top: 0px;
-		opacity: 1;
-		transition: all .6s ease-in-out;
+}
+
+@media (min-width:993px) {
+	i.material-icons {
+		padding:20px;
+		margin:10px;
+		font-size:4rem;
+	}
+	i.material-icons:after {
+		border-width:3px;
+		top:-3px;
+		left:-3px;
 	}
 }
