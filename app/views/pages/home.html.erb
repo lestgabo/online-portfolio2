@@ -6,26 +6,27 @@
 
 <!----------------------------------------------------------------------------->
 
-<!-- https://codemyui.com/fancy-button-effects/ -->
 
 <div class="container">
   <div class="row">
     <div class="col-md-3">
       <div class="well text-center">
-         <a href="#" class="btn2">LinkedIn</a>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo, facilis, dolore, laboriosam necessitatibus fugiat exercitationem facere asperiores nobis nesciunt corrupti atque saepe commodi placeat quia tenetur ea veritatis cum fugit!
+        <%= link_to "//google.com", class:"btn2" do %>
+          <i class= "fa fa-linkedin-square"></i>
+          LinkedIn
+        <% end %>
+        </div>
+    </div>
+    <div class="col-md-3">
+      <div class="well text-center">
+        <%= link_to "//google.com", class:"btn2" do %>
+          <i class= "fa fa-github-square"></i>
+          GitHub
+        <% end %>
       </div>
     </div>
     <div class="col-md-3">
       <div class="well text-center">
-         <a href="#" class="btn2">GitHub</a>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo, facilis, dolore, laboriosam necessitatibus fugiat exercitationem facere asperiores nobis nesciunt corrupti atque saepe commodi placeat quia tenetur ea veritatis cum fugit!
-      </div>
-    </div>
-    <div class="col-md-3">
-      <div class="well text-center">
-         
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo, facilis, dolore, laboriosam necessitatibus fugiat exercitationem facere asperiores nobis nesciunt corrupti atque saepe commodi placeat quia tenetur ea veritatis cum fugit!
         <%= link_to "//google.com", class:"btn2" do %>
           <i class= "fa fa-h-square"></i>
           HackerRank
@@ -34,8 +35,10 @@
     </div>
     <div class="col-md-3">
       <div class="well text-center">
-         <a href="#" class="btn2">DevMatch</a>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo, facilis, dolore, laboriosam necessitatibus fugiat exercitationem facere asperiores nobis nesciunt corrupti atque saepe commodi placeat quia tenetur ea veritatis cum fugit!
+        <%= link_to "//google.com", class:"btn2" do %>
+          <i class= "fa fa-users"></i>
+          DevMatch
+        <% end %>
       </div>
     </div>
   </div>

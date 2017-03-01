@@ -128,6 +128,7 @@ a {
    position: relative;
    text-align: center;
   // text-transform: uppercase;
+  text-decoration: none;
    vertical-align: middle;
    white-space: nowrap;
    transition-property: transform;
@@ -136,14 +137,19 @@ a {
    
    &:hover {
      box-shadow: 0 0 0 28px rgba(0,0,0,0.25) inset;
+     color: none;
    }
   
    &:active {
      transform: translateY(3px);
    }
+   
  }
 
-
+.btn:hover, .btn:focus, .btn.focus {
+    color: none;
+    text-decoration: none;
+}
 // Bourbon mixin
 
 @include keyframes(gelatine) {
