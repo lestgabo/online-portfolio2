@@ -27,7 +27,7 @@ h1, h2, h3 {
 }
 
 // Background gradient
-.navbar, .home-callout {
+.navbar, .home-callout, .not-name-container, .btn2 {
   //Gradient provided by @_ighosh at uiGradients.com
   // ServQuick from uiGradients.com
   background: #485563; /* fallback for old browsers */
@@ -75,6 +75,11 @@ h1, h2, h3 {
   padding-bottom: 100px;
 }
 
+.not-name-container {
+  color: white;
+}
+
+
 ////////////////////////////////////////////////////////////////////
 // https://codemyui.com/fancy-button-effects/
 // http://codepen.io/rickzanutta/pen/EactG
@@ -118,7 +123,7 @@ a {
 /* BUTTON 2 */
 
 .btn2, .btn2:link, .btn2:visited {
-   background-color: #5b657c;
+   background-color:  #485563;// #5b657c;
    border: none;
    border-radius: 3px;
    box-shadow: 0 -3px 0 rgba(0,0,0,0.15) inset;

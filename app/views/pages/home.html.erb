@@ -1,5 +1,5 @@
 <div class="home-callout text-center container-fluid">
-  <h1>Lestley A. Gabo</h1>
+  <h1><b> Lestley A. Gabo </b></h1>
   <!--<h3>This page contains links to my LinkedIn, GitHub, and HackerRank profiles.</h3>-->
   <!--<h3>It also contains links to my projects, completed or otherwise.</h3>-->
 </div>
@@ -8,38 +8,46 @@
 
 
 <div class="container">
+  
   <div class="row">
-    <div class="col-md-3">
-      <div class="well text-center">
-        <%= link_to "//www.linkedin.com/in/lestgabo/", class:"btn2", target: "_blank" do %>
-          <i class= "fa fa-linkedin-square"></i>
-          LinkedIn
-        <% end %>
-        </div>
-    </div>
-    <div class="col-md-3">
-      <div class="well text-center">
-        <%= link_to "//github.com/lestgabo", class:"btn2", target: "_blank" do %>
-          <i class= "fa fa-github-square"></i>
-          GitHub
-        <% end %>
-      </div>
-    </div>
-    <div class="col-md-3">
-      <div class="well text-center">
-        <%= link_to "//www.hackerrank.com/beeftosino", class:"btn2", target: "_blank" do %>
-          <i class= "fa fa-h-square"></i>
-          HackerRank
-        <% end %>
-      </div>
-    </div>
-    <div class="col-md-3">
-      <div class="well text-center">
-        <%= link_to "//pacific-mesa-35161.herokuapp.com/", class:"btn2", target: "_blank" do %>
-          <i class= "fa fa-users"></i>
-          DevMatch
-        <% end %>
+    <div class="col-md-12">
+      <div class="well text-center not-name-container">
+        <h2> Profiles </h2>
       </div>
     </div>
   </div>
+  
+  <div class="row">  
+    <div class="col-md-4">
+      <%= link_to "//www.linkedin.com/in/lestgabo/", class:"btn2", target: "_blank" do %>
+        <i class= "fa fa-linkedin-square"></i>
+        LinkedIn
+      <% end %>
+    </div>
+    <div class="col-md-4">
+      <%= link_to "//github.com/lestgabo", class:"btn2", target: "_blank" do %>
+        <i class= "fa fa-github-square"></i>
+        GitHub
+      <% end %>
+    </div>
+    <div class="col-md-4">
+      <%= link_to "//www.hackerrank.com/beeftosino", class:"btn2", target: "_blank" do %>
+        <i class= "fa fa-h-square"></i>
+        HackerRank
+      <% end %>
+    </div>
+
+    
+    <!--<div class="col-md-3">-->
+    <!--  <div class="well text-center">-->
+    <!--    <%= link_to "//pacific-mesa-35161.herokuapp.com/", class:"btn2", target: "_blank" do %>-->
+    <!--      <i class= "fa fa-users"></i>-->
+    <!--      DevMatch-->
+    <!--    <% end %>-->
+    <!--  </div>-->
+    <!--</div>-->
+    
+    
+  </div>
 </div>
+
