@@ -36,6 +36,9 @@ gem 'font-awesome-sass', '~> 4.7.0'
 # User Hirb for better database table display in console
 gem 'hirb', '0.7.3'
 
+# Bourbon for CSS and for links
+gem "bourbon"
+
 group :development, :test do
   # Use sqlite3 as the database for Active Record
   gem 'sqlite3'
