@@ -47,7 +47,7 @@ Rails.application.configure do
   # added from learn-rails
   config.action_mailer.smtp_settings = {
     address: "smtp.sendgrid.net",
-    port: 2525,
+    port: 587,
     domain: Rails.application.secrets.domain_name,
     authentication: "plain",
     enable_starttls_auto: true,
@@ -55,7 +55,7 @@ Rails.application.configure do
     password: Rails.application.secrets.email_provider_password
   }
   # ActionMailer Config
-  config.action_mailer.default_url_options = { :host => 'localhost:3000' }
+  config.action_mailer.default_url_options = { :host => 'https://online-portfolio-cloned-beeftosino.c9users.io/' }
   config.action_mailer.delivery_method = :smtp
   config.action_mailer.raise_delivery_errors = true
   # Send email in development mode?
@@ -63,6 +63,9 @@ Rails.application.configure do
   # Send email in development mode?
   config.action_mailer.perform_deliveries = true
 
+  class Application < Rails::Application
+    config.web_console.whitelisted_ips = false #'50.67.63.85'
+  end
 
 
 
