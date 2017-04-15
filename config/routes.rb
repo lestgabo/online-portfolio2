@@ -3,4 +3,5 @@ Rails.application.routes.draw do
   get 'about', to: 'pages#about'
   resources :contacts, only: :create
   get 'contact-lestley', to: 'contacts#new', as: 'new_contact'
+  get '1', to: 'pdfs#resume'
 end
