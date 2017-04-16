@@ -5,9 +5,107 @@ class PdfsController < ApplicationController
     @resume2 = send_file(pdf_filename, :filename => "public/2017 4 April 3.pdf", :disposition => 'inline', :type => "application/pdf") # show inline
   end
   
-  def ensc477lab4
-    pdf_filename = File.join(Rails.root, "public/ENSC477_Lab4_Rev1.1_finalcopy.pdf")
-    @resume2 = send_file(pdf_filename, :filename => "public/ENSC477_Lab4_Rev1.1_finalcopy.pdf", :disposition => 'inline', :type => "application/pdf") # show inline
+  
+  def PHYS131_lab1
+    pdf_filename = File.join(Rails.root, "public/PHYS131-lab.pdf")
+    @resume2 = send_file(pdf_filename, :filename => "public/PHYS131-lab.pdf", :disposition => 'inline', :type => "application/pdf") # show inline
   end
   
+  
+  def ENSC225_lab1
+    pdf_filename = File.join(Rails.root, "public/ENSC225-lab1 report.pdf")
+    @resume2 = send_file(pdf_filename, :filename => "public/ENSC225-lab1 report.pdf", :disposition => 'inline', :type => "application/pdf") # show inline
+  end
+  def ENSC225_lab2
+    pdf_filename = File.join(Rails.root, "public/ENSC225-lab2 report.pdf")
+    @resume2 = send_file(pdf_filename, :filename => "public/ENSC225-lab2 report.pdf", :disposition => 'inline', :type => "application/pdf") # show inline
+  end
+  def ENSC225_lab3
+    pdf_filename = File.join(Rails.root, "public/ENSC225-lab3 report.pdf")
+    @resume2 = send_file(pdf_filename, :filename => "public/ENSC225-lab3 report.pdf", :disposition => 'inline', :type => "application/pdf") # show inline
+  end
+  def ENSC225_lab4
+    pdf_filename = File.join(Rails.root, "public/ENSC225-lab4 report final.pdf")
+    @resume2 = send_file(pdf_filename, :filename => "public/ENSC225-lab4 report final.pdf", :disposition => 'inline', :type => "application/pdf") # show inline
+  end
+
+
+  def ENSC327_lab2
+    pdf_filename = File.join(Rails.root, "public/ENSC327-lab2.pdf")
+    @resume2 = send_file(pdf_filename, :filename => "public/ENSC327-lab2.pdf", :disposition => 'inline', :type => "application/pdf") # show inline
+  end
+  def ENSC327_lab3
+    pdf_filename = File.join(Rails.root, "public/ENSC327-lab3 - final.pdf")
+    @resume2 = send_file(pdf_filename, :filename => "public/ENSC327-lab3 - final.pdf", :disposition => 'inline', :type => "application/pdf") # show inline
+  end
+
+
+  def ENSC304_project
+    pdf_filename = File.join(Rails.root, "public/ENSC304-report - final.pdf")
+    @resume2 = send_file(pdf_filename, :filename => "public/ENSC304-report - final.pdf", :disposition => 'inline', :type => "application/pdf") # show inline
+  end
+  def ENSC406_project
+    pdf_filename = File.join(Rails.root, "public/ENSC406-Solar Panel Sustainability_Group 15.pdf")
+    @resume2 = send_file(pdf_filename, :filename => "public/ENSC406-Solar Panel Sustainability_Group 15.pdf", :disposition => 'inline', :type => "application/pdf") # show inline
+  end
+  def ENSC424_project
+    pdf_filename = File.join(Rails.root, "public/ENSC424-Project Report - edited.pdf")
+    @resume2 = send_file(pdf_filename, :filename => "public/ENSC424-Project Report - edited.pdf", :disposition => 'inline', :type => "application/pdf") # show inline
+  end
+
+
+  def ENSC470_lab1
+    pdf_filename = File.join(Rails.root, "public/ENSC470-lab1_basic_optics final version.pdf")
+    @resume2 = send_file(pdf_filename, :filename => "public/ENSC470-lab1_basic_optics final version.pdf", :disposition => 'inline', :type => "application/pdf") # show inline
+  end
+  def ENSC470_lab2
+    pdf_filename = File.join(Rails.root, "public/ENSC470-lab2_Report - lestley edited.pdf")
+    @resume2 = send_file(pdf_filename, :filename => "public/ENSC470-lab2_Report - lestley edited.pdf", :disposition => 'inline', :type => "application/pdf") # show inline
+  end
+  def ENSC470_lab3
+    pdf_filename = File.join(Rails.root, "public/ENSC470-lab3_Report_Group12.pdf")
+    @resume2 = send_file(pdf_filename, :filename => "public/ENSC470-lab3_Report_Group12.pdf", :disposition => 'inline', :type => "application/pdf") # show inline
+  end
+  
+  
+  def ENSC476_lab1
+    pdf_filename = File.join(Rails.root, "public/ENSC476-lab1.pdf")
+    @resume2 = send_file(pdf_filename, :filename => "public/ENSC476-lab1.pdf", :disposition => 'inline', :type => "application/pdf") # show inline
+  end
+  def ENSC476_lab2
+    pdf_filename = File.join(Rails.root, "public/ENSC476-lab2_group 10.pdf")
+    @resume2 = send_file(pdf_filename, :filename => "public/ENSC476-lab2_group 10", :disposition => 'inline', :type => "application/pdf") # show inline
+  end
+  def ENSC476_lab3
+    pdf_filename = File.join(Rails.root, "public/ENSC476-lab3.pdf")
+    @resume2 = send_file(pdf_filename, :filename => "public/ENSC476-lab3pdf", :disposition => 'inline', :type => "application/pdf") # show inline
+  end
+  
+  
+  def ENSC477_lab1
+    pdf_filename = File.join(Rails.root, "public/ENSC477-lab1_rev1.5.pdf")
+    @resume2 = send_file(pdf_filename, :filename => "public/ENSC477-lab1_rev1.5.pdf", :disposition => 'inline', :type => "application/pdf") # show inline
+  end
+  def ENSC477_lab2
+    pdf_filename = File.join(Rails.root, "public/ENSC477-lab2_rev1.4.pdf")
+    @resume2 = send_file(pdf_filename, :filename => "public/ENSC477-lab2_rev1.4.pdf", :disposition => 'inline', :type => "application/pdf") # show inline
+  end
+  def ENSC477_lab3
+    pdf_filename = File.join(Rails.root, "public/ENSC477-lab3_Rev1.2_finalcopy2.pdf")
+    @resume2 = send_file(pdf_filename, :filename => "public/ENSC477-lab3_Rev1.2_finalcopy2.pdf", :disposition => 'inline', :type => "application/pdf") # show inline
+  end
+  def ENSC477_lab4
+    pdf_filename = File.join(Rails.root, "public/ENSC477-lab4_Rev1.1_finalcopy.pdf")
+    @resume2 = send_file(pdf_filename, :filename => "public/ENSC477-lab4_Rev1.1_finalcopy.pdf", :disposition => 'inline', :type => "application/pdf") # show inline
+  end
+  
+  
+  def ENSC483_project1
+    pdf_filename = File.join(Rails.root, "public/ENSC483-project 1 - Final - Lestley.pdf")
+    @resume2 = send_file(pdf_filename, :filename => "public/ENSC483-project 1 - Final - Lestley", :disposition => 'inline', :type => "application/pdf") # show inline
+  end
+  def ENSC483_project2
+    pdf_filename = File.join(Rails.root, "public/ENSC483-project 2 - final.pdf")
+    @resume2 = send_file(pdf_filename, :filename => "public/ENSC483-project 2 - final", :disposition => 'inline', :type => "application/pdf") # show inline
+  end
 end
