@@ -21,6 +21,11 @@ Rails.application.routes.draw do
   get 'ENSC327-lab2', to: 'pdfs#ENSC327_lab2'
   get 'ENSC327-lab3', to: 'pdfs#ENSC327_lab3'
 
+  get 'ENSC440-desi', to: 'pdfs#ENSC440_desi'
+  get 'ENSC440-test', to: 'pdfs#ENSC440_test'    
+  get 'ENSC440-post', to: 'pdfs#ENSC440_post'  
+  get 'ENSC440-demo', to: 'pdfs#ENSC440_demo'
+
   get 'ENSC470-lab1', to: 'pdfs#ENSC470_lab1'
   get 'ENSC470-lab2', to: 'pdfs#ENSC470_lab2'    
   get 'ENSC470-lab3', to: 'pdfs#ENSC470_lab3'
