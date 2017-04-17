@@ -1,4 +1,7 @@
 class PdfsController < ApplicationController
+  
+  # Didn't find any use for this, using Google drive instead
+  
   def resume
     pdf_filename = File.join(Rails.root, "public/2017 4 April 3.pdf")
     # send_file(pdf_filename, :filename => "your_document.pdf", :type => "application/pdf") # downloads pdf

@@ -91,9 +91,6 @@ GEM
     nio4r (1.2.1)
     nokogiri (1.7.0.1)
       mini_portile2 (~> 2.1.0)
-    pdfjs_viewer-rails (0.0.9)
-      rails (> 4.2.0)
-      sass-rails (~> 5.0)
     pg (0.18.4)
     puma (3.4.0)
     rack (2.0.1)
@@ -177,7 +174,6 @@ DEPENDENCIES
   jbuilder (= 2.5.0)
   jquery-rails (= 4.1.1)
   listen (= 3.0.5)
-  pdfjs_viewer-rails
   pg (= 0.18.4)
   puma (= 3.4.0)
   rails (= 5.0.0)

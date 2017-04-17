@@ -39,8 +39,6 @@ gem 'hirb', '0.7.3'
 # Bourbon for CSS and for links
 gem "bourbon"
 
-# Opening PDF inline
-gem 'pdfjs_viewer-rails'
 
 group :development, :test do
   # Use sqlite3 as the database for Active Record
