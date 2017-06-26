@@ -1,6 +1,7 @@
 class PdfsController < ApplicationController
   
   # Didn't find any use for this, using Google drive instead
+  # theoretically these should work, but I don't know how, thats why the code for the PDFs are in the home.html.erb instead
   
   def resume
     pdf_filename = File.join(Rails.root, "public/2017 4 April 3.pdf")

@@ -1,11 +1,12 @@
 <div class="home-callout text-center container-fluid">
-  <h1><b> Lestley A. Gabo </b></h1>
+  <h1> Lestley A. Gabo </h1>
   <!--<h4>This page contains links to my LinkedIn, GitHub, and HackerRank profiles.</h4>-->
   <!--<h4>It also contains links to my projects, completed or otherwise.</h4>-->
   
   <br>
-  <h1> Profiles </h1>
+  
   <div class="container">
+    <h1 class="left-align"> Profiles </h1>
     <div class="row">  
       <div class="col-md-4">
         <%= link_to "//www.linkedin.com/in/lestgabo/", class:"btn2", target: "_blank" do %>
@@ -29,18 +30,19 @@
   </div>
   
   <br>
-  <h1> Web Projects </h1>
+  
   <div class="container">
+    <h1 class="left-align"> Web Projects </h1>
     <div class="row"> 
       <div class="col-md-4">
         <%= link_to "//pacific-mesa-35161.herokuapp.com/", class:"btn2", target: "_blank" do %>
-        <i class= "fa fa-users"></i>
+        <!--<i class= "fa fa-users"></i>-->
         DevMatch
         <% end %>
       </div>
       <div class="col-md-4">
         <%= link_to "https://lestleygabo.herokuapp.com/", class:"btn2", target: "_blank" do %>
-        <i class= "fa fa-id-badge"></i>
+        <!--<i class= "fa fa-id-badge"></i>-->
         Lestley Links
         <% end %>
       </div>
@@ -54,65 +56,77 @@
   
   
   <br>
-  <h1> PDFs </h1>
+
   <div class="container">
+    <h1 class="left-align"> Resume </h1>
     <div class="row"> 
-      <div class="col-md-4 col-md-offset-4">
+      <div class="col-md-4">
+        <!-- col-md-offset-4 -->
         <!--Resume-->
         <%= link_to "https://drive.google.com/file/d/0B9Dt_lzGChXNNXRlR3R0S1I4bVk/view", class:"btn2", target: "_blank" do %>
           Resume
         <% end %>
       </div>
     </div>
-    
+   </div> 
         
       <br>
       <br>
-    <h4> ENSC 483 - Modern Control Systems </h4>
+  <div class="container">
+    <h1 class="left-align"> Projects and Lab Reports </h1>
+    
+      <br>
+      <br>
+      
+    <h4 class="left-align"> ENSC 483 - Modern Control Systems </h4>
     <div class="row">    
-      <div class="col-md-6">
+      <div class="col-md-4">
         <%= link_to "https://drive.google.com/file/d/0B9Dt_lzGChXNdXBmQ29SRjVSR2M/view", class:"btn2", target: "_blank"  do %>
           Research Paper Simulation
         <% end %>
       </div>
-      <div class="col-md-6">
+      <div class="col-md-4">
         <%= link_to "https://drive.google.com/file/d/0B9Dt_lzGChXNOG5rSUZiMXgyOGM/view", class:"btn2", target: "_blank"  do %>
           Inverted Pendulum 
         <% end %>
       </div>
     </div> <!-- /div row of ENSC 483 - Modern Control Systems -->
     
-        
+    
+      <br>   
       <br>
       <br>
-    <h4> ENSC 477 - Biomedical Image Acquisition </h4>
+    <h4 class="left-align"> ENSC 477 - Biomedical Image Acquisition </h4>
     <div class="row"> 
-      <div class="col-md-3">
+      <div class="col-md-4">
         <%= link_to "https://drive.google.com/file/d/0B9Dt_lzGChXNVkI3dXI4X1MxeUU/view", class:"btn2", target: "_blank"  do %>
           Lab 1 - MEG
         <% end %>
       </div>
-      <div class="col-md-3">
+      <div class="col-md-4">
         <%= link_to "https://drive.google.com/file/d/0B9Dt_lzGChXNV2pOUGQ5YXRacWM/view", class:"btn2", target: "_blank"  do %>
           Lab 2 - CT
         <% end %>
       </div>
-      <div class="col-md-3">
+    </div> <!-- /div row of ENSC 477 - Biomedical Image Acquisition  -->
+    <div class="row">
+      <div class="col-md-4">
         <%= link_to "https://drive.google.com/file/d/0B9Dt_lzGChXNWWc3OUpiVmhXb3M/view", class:"btn2", target: "_blank"  do %>
           Lab 3 - Ultrasound
         <% end %>
       </div>
-      <div class="col-md-3">
+      <div class="col-md-4">
         <%= link_to "https://drive.google.com/file/d/0B9Dt_lzGChXNNW1TZ1pYSkRtT3M/view", class:"btn2", target: "_blank"  do %>
           Lab 4 - MRI Lab
         <% end %>
       </div>
     </div> <!-- /div row of ENSC 477 - Biomedical Image Acquisition  -->
     
-            
+    
+      <br>        
       <br>
       <br>
-    <h4> ENSC 476 - Biophotonics and Microscopy Techniques </h4>
+    <h4 class="left-align"> ENSC 476 - Biophotonics and Microscopy Techniques </h4>
     <div class="row"> 
       <div class="col-md-4">
         <%= link_to "https://drive.google.com/file/d/0B9Dt_lzGChXNRThlbG9YeGVaMXM/view", class:"btn2", target: "_blank"  do %>
@@ -131,10 +145,11 @@
       </div>
     </div> <!-- /div row of ENSC 476 - Biophotonics and Microscopy Techniques -->
     
-            
+    
+      <br>      
       <br>
       <br>
-    <h4> ENSC 470 - Optical Engineering and Laser Applications </h4>
+    <h4 class="left-align"> ENSC 470 - Optical Engineering and Laser Applications </h4>
     <div class="row"> 
       <div class="col-md-4">
         <%= link_to "https://drive.google.com/file/d/0B9Dt_lzGChXNUHU5N3FKZ2ZjYXc/view", class:"btn2", target: "_blank"  do %>
@@ -153,51 +168,58 @@
       </div>
     </div> <!-- /div row of ENSC 470 - Optical Engineering and Laser Applications -->
         
-        
+      
+      <br> 
       <br>
       <br>
-    <h4> ENSC 305W/440W - Capstone Project </h4>
+    <h4 class="left-align"> ENSC 305W/440W - Capstone Project </h4>
     <div class="row"> 
-      <div class="col-md-3">
+      <div class="col-md-4">
         <%= link_to "https://drive.google.com/file/d/0B9Dt_lzGChXNeURWWWtwdGJiWkk/view", class:"btn2", target: "_blank"  do %>
           Design
         <% end %>
       </div>
-      <div class="col-md-3">
+      <div class="col-md-4">
         <%= link_to "https://drive.google.com/file/d/0B9Dt_lzGChXNWDJNRXBIMkRJVHc/view", class:"btn2", target: "_blank"  do %>
           Test
         <% end %>
       </div>
-      <div class="col-md-3">
+    </div> <!-- /div row of ENSC 305W/440W - Capstone Project -->
+    <div class="row"> 
+      <div class="col-md-4">
         <%= link_to "https://drive.google.com/file/d/0B9Dt_lzGChXNRmdtR0dvLVlDQjA/view", class:"btn2", target: "_blank"  do %>
           Post
         <% end %>
       </div>
-      <div class="col-md-3">
+      <div class="col-md-4">
         <%= link_to "https://drive.google.com/file/d/0B9Dt_lzGChXNUC1semYtQkZ6X0E/view", class:"btn2", target: "_blank"  do %>
           Demo
         <% end %>
       </div>
     </div> <!-- /div row of ENSC 305W/440W - Capstone Project -->
     
-        
+      
+      <br>  
       <br>
       <br>
-    <h4> ENSC 424 - Multimedia Communications Engineering </h4>
+    <h4 class="left-align"> ENSC 424 - Multimedia Communications Engineering </h4>
     <div class="row"> 
-      <div class="col-md-4 col-md-offset-4">
+      <div class="col-md-4">
+        <!-- col-md-offset-4 -->
         <%= link_to "https://drive.google.com/file/d/0B9Dt_lzGChXNTFhkTzJQQTFMVFE/view", class:"btn2", target: "_blank"  do %>
           Project Report - Philter
         <% end %>
       </div>
     </div> <!-- /div row of ENSC 424 - Multimedia Communications Engineering -->
     
-            
+      
+      <br>      
       <br>
       <br>
-    <h4> ENSC 406 - Engineering Ethics, Law, and Professional Practice </h4>
+    <h4 class="left-align"> ENSC 406 - Engineering Ethics, Law, and Professional Practice </h4>
     <div class="row"> 
-      <div class="col-md-4 col-md-offset-4">
+      <div class="col-md-4">
+        <!-- col-md-offset-4 -->
         <%= link_to "https://drive.google.com/file/d/0B9Dt_lzGChXNVzM5Y3JLbGpUM2c/view", class:"btn2", target: "_blank"  do %>
           Solar Panel Sustainability
         <% end %>
@@ -207,16 +229,17 @@
             
       <br>
       <br>
-    <h4> ENSC 327 - Communication Systems </h4>
+      <br>
+    <h4 class="left-align"> ENSC 327 - Communication Systems </h4>
     <div class="row"> 
-      <div class="col-md-6">
+      <div class="col-md-4">
         <%= link_to "https://drive.google.com/file/d/0B9Dt_lzGChXNYmtQcFlkdDV1RWs/view", class:"btn2", target: "_blank"  do %>
           Lab 2 - Amplitude Modulation
         <% end %>
       </div>
-      <div class="col-md-6">
+      <div class="col-md-4">
         <%= link_to "https://drive.google.com/file/d/0B9Dt_lzGChXNSUxZYk5QRXFjVnM/view", class:"btn2", target: "_blank"  do %>
-          Lab 3 - FM Modulation and Demodulation
+          Lab 3 - FM Mod and Demod
         <% end %>
       </div>
     </div> <!-- /div row of ENSC 327 - Communication Systems -->
@@ -224,36 +247,41 @@
             
       <br>
       <br>
-    <h4> ENSC 304 - Human Factors and Usability Engineering </h4>
+      <br>
+    <h4 class="left-align"> ENSC 304 - Human Factors and Usability Engineering </h4>
     <div class="row"> 
-      <div class="col-md-4 col-md-offset-4">
+      <div class="col-md-4">
+        <!-- col-md-offset-4 -->
         <%= link_to "https://drive.google.com/file/d/0B9Dt_lzGChXNd1FpenlyVG1vWGs/view", class:"btn2", target: "_blank"  do %>
           Self-Checkout Machines
         <% end %>
       </div>
     </div> <!-- /div row of ENSC 304 - Human Factors and Usability Engineering -->
     
-        
+      
+      <br> 
       <br>
       <br>
-    <h4> ENSC 225 - Microelectronics I </h4>
+    <h4 class="left-align"> ENSC 225 - Microelectronics I </h4>
     <div class="row"> 
-      <div class="col-md-3">
+      <div class="col-md-4">
         <%= link_to "https://drive.google.com/file/d/0B9Dt_lzGChXNY1VrVFZ6Nnh6Z00/view", class:"btn2", target: "_blank"  do %>
           Lab 1 - Opamps
         <% end %>
       </div>
-      <div class="col-md-3">
+      <div class="col-md-4">
         <%= link_to "https://drive.google.com/file/d/0B9Dt_lzGChXNa3RxdkRLRE5lWW8/view", class:"btn2", target: "_blank"  do %>
           Lab 2 - Diodes
         <% end %>
       </div>
-      <div class="col-md-3">
+    </div> <!-- /div row of ENSC 225 - Microelectronics I -->
+    <div class="row"> 
+      <div class="col-md-4">
         <%= link_to "https://drive.google.com/file/d/0B9Dt_lzGChXNUVRRVUJ4Z18wNU0/view", class:"btn2", target: "_blank"  do %>
           Lab 3 - BJTs
         <% end %>
       </div>
-      <div class="col-md-3">
+      <div class="col-md-4">
         <%= link_to "https://drive.google.com/file/d/0B9Dt_lzGChXNV013alNoNzF2UXc/view", class:"btn2", target: "_blank"  do %>
           Lab 4 - MOSFETs
         <% end %>
@@ -263,9 +291,11 @@
         
       <br>
       <br>
-    <h4> PHYS 131 - Physics Laboratory I </h4>
+      <br>
+    <h4 class="left-align"> PHYS 131 - Physics Laboratory I </h4>
     <div class="row"> 
-      <div class="col-md-4 col-md-offset-4">
+      <div class="col-md-4">
+        <!-- col-md-offset-4  -->
         <%= link_to "https://drive.google.com/file/d/0B9Dt_lzGChXNODFNejdiVEljUHc/view", class:"btn2", target: "_blank"  do %>
           Force and Moving Charges
         <% end %>
@@ -279,8 +309,8 @@
   <br>
   <br>
   <!-- button to go to top -->
-  <button onclick="topFunction()" class="btn2" title="Go to top">Go to top of page.</button>
-  
+  <!--<button onclick="topFunction()" class="hide-box" title="Go to top"> <h1>Go to top of page.</h1></button>-->
+  <button onclick="topFunction()" class="hide-btn2-background" title="Go to top"><h3>Go to top of page.</h3></button>
 </div> <!-- /div of class="home-callout text-center container-fluid" -->
 
 <!----------------------------------------------------------------------------->
