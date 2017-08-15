@@ -26,6 +26,15 @@ h1, h2, h3 {
   font-family: 'Open Sans', sans-serif;
 }
 
+// tabs, using padding to make tabs
+h2 {
+  padding-left: 1em;
+}
+
+h4 {
+  padding-left: 3em;
+}
+
 // Background gradient
 .navbar, .home-callout, .not-name-container {
   //Gradient provided by @_ighosh at uiGradients.com
@@ -34,6 +43,14 @@ h1, h2, h3 {
   background: -webkit-linear-gradient(to left, #485563 , #29323c); /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(to left, #485563 , #29323c); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
+}
+
+.jumbotron {
+  // background color becomes not white
+  background-color: inherit;
+  
+  // too much space from name to profile
+  margin-bottom: 0px;
 }
 
 // Nav Styles
