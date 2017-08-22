@@ -1,24 +1,27 @@
-<div class="container">
-  <div class="row">
-    <h3 class="text-center">Contact Lestley</h3>
-    
-    <div class="col-md-4 col-md-offset-4">
-      <div class="well">
-        <%= form_for @contact do |f| %>
-        
-          <div class="form-group">
-            <%= f.label :email %>
-            <%= f.text_field :email, class: 'form-control' %>
-          </div>
-          
-          <div class="form-group">
-            <%= f.label :comments %>
-            <%= f.text_area :comments, class: 'form-control' %>
-          </div>
-            
-            <%= f.submit 'Submit', class: 'btn btn2' %>
-        <% end %>
-      </div>
-    </div>
+<div class="home-callout text-center container-fluid">
+  <div class='jumbotron'>
+    <h1><strong> Contact Lestley </strong></h1>
   </div>
-</div>
+  <div container>
+    <div class="row">
+      <div class="col-md-4 col-md-offset-4">
+        <div class="well">
+          <%= form_for @contact do |f| %>
+          
+            <div class="form-group">
+              <%= f.label :email %>
+              <%= f.text_field :email, class: 'form-control' %>
+            </div>
+            
+            <div class="form-group">
+              <%= f.label :comments %>
+              <%= f.text_area :comments, class: 'form-control' %>
+            </div>
+              
+              <%= f.submit 'Submit', class: 'btn btn2' %>
+          <% end %>
+        </div> <!-- well -->
+      </div> <!-- col-md-4 -->
+    </div> <!-- row -->
+  </div> <!-- container -->
+</div> <!-- home-callout text-center container-fluid -->
