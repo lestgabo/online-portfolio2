@@ -2,7 +2,12 @@
   <div class='jumbotron'>
     <h1><strong> Contact Lestley </strong></h1>
   </div>
-  <div container>
+  
+  
+  
+  
+  <div class="container">
+      <hr>
     <div class="row">
       <div class="col-md-4 col-md-offset-4">
         <div class="well">
@@ -14,7 +19,7 @@
             </div>
             
             <div class="form-group">
-              <%= f.label :comments %>
+              <%= f.label :message %>
               <%= f.text_area :comments, class: 'form-control' %>
             </div>
               
@@ -24,4 +29,33 @@
       </div> <!-- col-md-4 -->
     </div> <!-- row -->
   </div> <!-- container -->
+  
+  <!-- There is an issue of the container fluid not covering until the bottom of the page
+       and when that happens, the whole page is indented (shifted to the right).
+       
+       Since this page, the contact page, will always be shorter than the home page with all the links
+       the container fluid cannot reach the bottom. 
+       
+       This is why I am including the <br>s below. 
+       They will ensure that container fluid reaches the bottom. 
+       
+       The problem is that there are a lot of useless spaces... not worth it.
+       
+       UPDATE: This is now solved by giving padding of home-callout a percentage value
+         .home-callout {
+            // padding-bottom: 100px;
+            padding-bottom: 25%;
+          }
+  -->
+
+  <!--<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>-->
+  <!--<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>  -->
+  <!--<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>  -->
+  <!--<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>  -->
+  <!--<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>  -->
+  <!--<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>  -->
+  <!--<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>  -->
+  <!--<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>  -->
+  <!--<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>  -->
+
 </div> <!-- home-callout text-center container-fluid -->
