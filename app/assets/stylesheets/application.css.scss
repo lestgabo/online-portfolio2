@@ -52,7 +52,7 @@ h4 {
 }
 
 // Background gradient
-.navbar, .home-callout, .not-name-container {
+.navbar, .home-callout, .home-callout-contact, .not-name-container {
   //Gradient provided by @_ighosh at uiGradients.com
   // ServQuick from uiGradients.com
   background: #485563; /* fallback for old browsers */
@@ -104,8 +104,19 @@ h4 {
   color:white;
   margin-top: -20px;
   padding-top: 30px;
-  // padding-bottom: 100px;
-  padding-bottom: 25%;
+  padding-bottom: 60px;
+  padding-left: 0px;
+  padding-right: 0px; 
+}
+
+// style of container for the contact page
+// padding-bottom=360.50px so it reaches the bottom of a 1920x1080 monitor
+.home-callout-contact {
+  color:white;
+  margin-top: -20px;
+  padding-top: 30px;
+  padding-bottom: 360.50px;
+  //padding-bottom: 20%;
   padding-left: 0px;
   padding-right: 0px; 
 }
