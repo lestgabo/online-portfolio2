@@ -14,7 +14,7 @@ class ContactsController < ApplicationController
     if @contact.save
       # Store form fields via parameters, into local variables
       email = params[:contact][:email]
-      body = params[:contact][:comments]
+      body = params[:contact][:message]
       # Plug variables into Contact Mailer
       # email method and send email
       ContactMailer.contact_email(email, body).deliver_now
@@ -35,6 +35,6 @@ class ContactsController < ApplicationController
     # To collect data from form, we need to use
     # strong parameters and whitelist the form fields
     def contact_params
-      params.require(:contact).permit(:email, :comments)
+      params.require(:contact).permit(:email, :message)
     end
 end
