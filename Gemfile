@@ -37,7 +37,7 @@ gem 'font-awesome-sass', '~> 4.7.0'
 gem 'hirb', '0.7.3'
 
 # Bourbon for CSS and for links
-gem "bourbon"
+gem "bourbon", '4.3.3'
 
 
 group :development, :test do
