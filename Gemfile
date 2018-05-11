@@ -38,6 +38,8 @@ gem 'hirb', '0.7.3'
 
 # Bourbon for CSS and for links
 gem "bourbon", '4.3.3'
+# CSS with hover effects for links
+gem 'hover-rails'
 
 
 group :development, :test do

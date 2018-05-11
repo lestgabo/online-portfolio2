@@ -10,6 +10,8 @@
  * files in this directory. Styles in this file should be added after the last require_* statement.
  * It is generally better to create a new file per style scope.
  *
+ 
+ *= require hover
  *= require_tree .
  *= require_self
  */
@@ -19,7 +21,7 @@
 @import 'font-awesome-sprockets';
 @import 'font-awesome';
 
-
+@import 'hover';
 
 // Typography Styles
 h1, h2, h3, h4, label, a {
@@ -167,108 +169,7 @@ h4 {
 
 
 ////////////////////////////////////////////////////////////////////
-// https://codemyui.com/fancy-button-effects/
-// http://codepen.io/rickzanutta/pen/EactG
-// Cool buttons
-// A PEN BY Riccardo Zanutta
-@import "bourbon";
+// https://github.com/Leyka/hover-rails
+// Hover-rails
 
 
-/* Demo styling */
-
-body {
-  background-color: #eee;
-  box-sizing: border-box;
-  font-family: "Futura PT", "Futura", sans-serif;
-  -webkit-font-smoothing: antialiased;
-}
-
-/* Buttons at the center */
-
-.wrap {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  margin-top: -259px;
-  margin-left: -89px;
-  text-align: center;
-}
-
-/* General styling for the links */
-
-.btn2 {
-  padding: 10px 10px;
-  text-decoration: none;
-  font-size: 15px;
-  display: block;
-  margin: 20px auto;
-  
-    text-shadow:  -1.5px  1.5px 0 #000,
-		             1.5px  1.5px 0 #000,
-		             1.5px -1.5px 0 #000,
-                -1.5px -1.5px 0 #000;
-  
-}
-
-
-
-/* BUTTON 2 */
-
-.btn2, .btn2:link, .btn2:visited {
-   background-color: #29323c;// #5b657c;
-   border: none;
-   border-radius: 3px;
-   box-shadow: 0 -3px 0 rgba(0,0,0,0.15) inset;
-   color: #fff;
-  letter-spacing: .1em;
-   cursor: pointer;
-   position: relative;
-   text-align: center;
-  // text-transform: uppercase;
-  text-decoration: none;
-   vertical-align: middle;
-   white-space: nowrap;
-   transition-property: transform;
-   transform: translateZ(0);
-   transition: box-shadow 0.5s cubic-bezier(0.390, 0.500, 0.150, 1.360);
-   
-   &:hover {
-     box-shadow: 0 0 0 35px rgba(0,0,0,0.25) inset;
-     color: white;
-   }
-  
-   &:active {
-     transform: translateY(3px);
-   }
-   
- }
-
-
-// Bourbon mixin
-
-@include keyframes(gelatine) {
-  from,to {
-    @include transform(scale(1, 1));
-  }
-  25% {
-    @include transform(scale(0.9, 1.1));
-  }
-  50% {
-    @include transform(scale(1.1, 0.9));
-  }
-  75% {
-    @include transform(scale(0.95, 1.05));
-  }
-  from,to {
-    @include transform(scale(1, 1));
-  }
-  25% {
-    @include transform(scale(0.9, 1.1));
-  }
-  50% {
-    @include transform(scale(1.1, 0.9));
-  }
-  75% {
-    @include transform(scale(0.95, 1.05));
-  }
-}
