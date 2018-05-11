@@ -29,7 +29,9 @@ h1, h2, h3, h4, label, a {
 		//             1.5px -1.5px 0 #000,
   //               -1.5px -1.5px 0 #000;
                 
-  text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
+  // text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
+  // black but not too black hex color
+  color: #323232;
 }
 
 // tabs, using padding to make tabs
@@ -55,9 +57,9 @@ h4 {
 .navbar, .home-callout, .home-callout-contact, .not-name-container {
   //Gradient provided by @_ighosh at uiGradients.com
   // ServQuick from uiGradients.com
-  background: #485563; /* fallback for old browsers */
-  background: -webkit-linear-gradient(to left, #485563 , #29323c); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to left, #485563 , #29323c); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: #ece9e6; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #ece9e6, #ffffff); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #ece9e6, #ffffff); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 .jumbotron {
@@ -80,28 +82,28 @@ h4 {
 
 .navbar-default .navbar-brand, 
 .navbar-default .navbar-nav > li > a {
-  color: white;
+  color: #323232;
   &:hover {
-    color: white;
-    opacity: 0.75;
+    color: 191919;
+    //opacity: 0.75;
   }
 }
 
 // navbar when minimizing screen
 .navbar-default .navbar-toggle .icon-bar {
-  background-color: white;
+  background-color: #323232;
 }
 
 .navbar-default .navbar-toggle {
-  border: 2px solid white;
+  border: 2px #323232;
   &:hover, &:focus {
-    background-color: #29323c;
+    background-color: #191919;
   }
 }
 
 // Homepage Styles
 .home-callout {
-  color:white;
+  color:323232;
   margin-top: -20px;
   padding-top: 30px;
   padding-bottom: 60px;
@@ -112,7 +114,7 @@ h4 {
 // style of container for the contact page
 // padding-bottom=360.50px so it reaches the bottom of a 1920x1080 monitor
 .home-callout-contact {
-  color:white;
+  color:323232;
   margin-top: -20px;
   padding-top: 30px;
   padding-bottom: 360.50px;
