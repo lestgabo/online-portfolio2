@@ -89,7 +89,7 @@ body {
 .navbar-default .navbar-nav > li > a {
   color: #323232;
   &:hover {
-    color: 191919;
+    color: #191919;
     //opacity: 0.75;
   }
 }
@@ -103,6 +103,7 @@ body {
   border: 2px #323232;
   &:hover, &:focus {
     background-color: #191919;
+    color: #191919;
   }
 }
 
