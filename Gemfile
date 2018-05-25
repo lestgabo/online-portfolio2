@@ -41,6 +41,8 @@ gem "bourbon", '4.3.3'
 # CSS with hover effects for links
 gem 'hover-rails'
 
+# for SEO
+gem 'sitemap_generator'
 
 group :development, :test do
   # Use sqlite3 as the database for Active Record
