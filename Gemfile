@@ -44,6 +44,10 @@ gem 'hover-rails'
 # for SEO
 gem 'sitemap_generator'
 
+# sprockets annoying
+# Known high severity security vulnerability detected in sprockets >=3.0.0,<3.7.2
+gem 'sprockets'
+
 group :development, :test do
   # Use sqlite3 as the database for Active Record
   gem 'sqlite3'
