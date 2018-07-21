@@ -28,16 +28,11 @@
             </button>
           </div>
           <div class="collapse navbar-collapse navbar-test" id="main-nav-collapse">
-            <ul class="nav navbar-nav navbar-center">
-                          <li>    <%= link_to root_path, class: "navbar-brand hvr-float-shadow" do %>
-              Lestley Links
-            <% end %>        </li>
-              <li>
-                <%= link_to new_contact_path, class:"navbar-brand hvr-float-shadow" do %>
-                  <i class= "fa fa-envelope-open-o"></i>
-                  Contact Lestley
-                <% end %>
-              </li>
+            <ul class="nav navbar-nav navbar-middle">
+              <li><%= link_to root_path,        class: "navbar-brand hvr-float-shadow" do %>Profiles<% end %></li>         
+              <li><%= link_to resume_path,      class: "navbar-brand hvr-float-shadow" do %>Resume<%   end %></li>   
+              <li><%= link_to projects_path,    class: "navbar-brand hvr-float-shadow" do %>Projects<% end %></li>   
+              <li><%= link_to new_contact_path, class: "navbar-brand hvr-float-shadow" do %>Contact<%  end %></li>
             </ul>
           </div><!-- /.navbar-collapse -->
         </div>
