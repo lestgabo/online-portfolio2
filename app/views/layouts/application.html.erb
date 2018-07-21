@@ -13,38 +13,42 @@
   </head>
 
   <body>
-    <nav class="navbar navbar-default navbar-static-top" role="navigation">
-      <div class='container'>
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#main-nav-collapse">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <%= link_to root_path, class: "navbar-brand hvr-float-shadow" do %>
-            Lestley Links
-          <% end %>
-        </div>
-        <div class="collapse navbar-collapse" id="main-nav-collapse">
-          <ul class="nav navbar-nav navbar-right">
-            <li>
-              <%= link_to new_contact_path, class:"navbar-brand hvr-float-shadow" do %>
-                <i class= "fa fa-envelope-open-o"></i>
-                Contact Lestley
-              <% end %>
-            </li>
-          </ul>
-        </div><!-- /.navbar-collapse -->
+    <div class="home-callout text-center container-fluid">
+      <div class='jumbotron'>
+        <h1><strong> Lestley Gabo </strong></h1>
       </div>
-    </nav>
-    
-    <div class="container alert-width text-center">
-      <% flash.each do |type,msg| %>
-        <%= content_tag :div, msg, class: "alert alert-#{type}" %>
-      <% end %>
+      <nav class="navbar navbar-default navbar-static-top " role="navigation">
+        <div class='container'>
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#main-nav-collapse">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <%= link_to root_path, class: "navbar-brand hvr-float-shadow" do %>
+              Lestley Links
+            <% end %>
+          </div>
+          <div class="collapse navbar-collapse navbar-test" id="main-nav-collapse">
+            <ul class="nav navbar-nav navbar-right">
+              <li>
+                <%= link_to new_contact_path, class:"navbar-brand hvr-float-shadow" do %>
+                  <i class= "fa fa-envelope-open-o"></i>
+                  Contact Lestley
+                <% end %>
+              </li>
+            </ul>
+          </div><!-- /.navbar-collapse -->
+        </div>
+      </nav>
+      
+      <div class="container alert-width text-center">
+        <% flash.each do |type,msg| %>
+          <%= content_tag :div, msg, class: "alert alert-#{type}" %>
+        <% end %>
+      </div>
+      <%= yield %>
     </div>
-    <%= yield %>
-
   </body>
 </html>
