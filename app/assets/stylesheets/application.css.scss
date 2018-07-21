@@ -62,16 +62,17 @@ body {
 .navbar, .home-callout, .home-callout-contact, .not-name-container {
   //Gradient provided by @_ighosh at uiGradients.com
   // ServQuick from uiGradients.com
+  // background: #ece9e6; /* fallback for old browsers */
+  // background: -webkit-linear-gradient(to right, #ece9e6, #ffffff); /* Chrome 10-25, Safari 5.1-6 */
+  // background: linear-gradient(to right, #ece9e6, #ffffff); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: black;
+}
+.navbar-test {
+  border-radius: 10px;
   background: #ece9e6; /* fallback for old browsers */
   background: -webkit-linear-gradient(to right, #ece9e6, #ffffff); /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(to right, #ece9e6, #ffffff); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  // background: black;
 }
-// .navbar-test {
-//     background: #ece9e6; /* fallback for old browsers */
-//   background: -webkit-linear-gradient(to right, #ece9e6, #ffffff); /* Chrome 10-25, Safari 5.1-6 */
-//   background: linear-gradient(to right, #ece9e6, #ffffff); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-// }
 
 .jumbotron {
   // background color becomes not white
@@ -91,6 +92,11 @@ body {
   font-weight: 800;
 }
 
+.navbar-default .navbar-collapse, .navbar-default .navbar-form {
+    padding: 0px 10px;
+    margin: 0px 50px;
+}
+
 .navbar-default .navbar-brand, 
 .navbar-default .navbar-nav > li > a {
   color: #323232;
@@ -106,7 +112,7 @@ body {
 }
 
 .navbar-default .navbar-toggle {
-  border: 2px #323232;
+  // border: 2px #323232;
   &:hover, &:focus {
     background-color: #191919;
     color: #191919;
