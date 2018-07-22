@@ -17,7 +17,8 @@
       <div class='jumbotron'>
         <h1><strong> Lestley Gabo </strong></h1>
       </div>
-      <nav class="navbar navbar-default navbar-static-top " role="navigation">
+      <!--<nav class="navbar navbar-default navbar-static-top" role="navigation">-->
+      <nav class="navbar navbar-default" role="navigation">
         <div class='container'>
           <div class="navbar-header">
             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#main-nav-collapse">
@@ -28,7 +29,7 @@
             </button>
           </div>
           <div class="collapse navbar-collapse navbar-test" id="main-nav-collapse">
-            <ul class="nav navbar-nav navbar-middle">
+            <ul class="nav navbar-nav"  style="display: inline-block">
               <li><%= link_to root_path,        class: "navbar-brand hvr-float-shadow" do %>Profiles<% end %></li>         
               <li><%= link_to resume_path,      class: "navbar-brand hvr-float-shadow" do %>Resume<%   end %></li>   
               <li><%= link_to projects_path,    class: "navbar-brand hvr-float-shadow" do %>Projects<% end %></li>   
@@ -43,7 +44,9 @@
           <%= content_tag :div, msg, class: "alert alert-#{type}" %>
         <% end %>
       </div>
-      <%= yield %>
+      <div class="home-callout container-fluid">
+        <%= yield %>
+      </div><!-- /div of class="home-callout text-center container-fluid" -->
     </div>
   </body>
 </html>
