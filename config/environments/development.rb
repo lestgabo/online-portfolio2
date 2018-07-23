@@ -74,4 +74,11 @@ Rails.application.configure do
   # Use an evented file watcher to asynchronously detect changes in source code,
   # routes, locales, etc. This feature depends on the listen gem.
   config.file_watcher = ActiveSupport::EventedFileUpdateChecker
+  
+  
+    # https://stackoverflow.com/questions/36986925/how-do-i-display-svg-image-in-rails
+  config.assets.precompile += %w( '.svg' )  
+  # Must include to get inline SVGs to work in deploy
+  config.assets.css_compressor = :sass
+
 end
