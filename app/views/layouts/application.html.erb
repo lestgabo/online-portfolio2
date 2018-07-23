@@ -17,7 +17,6 @@
       <div class='jumbotron'>
         <h1><strong> Lestley Gabo </strong></h1>
       </div>
-      <!--<nav class="navbar navbar-default navbar-static-top" role="navigation">-->
       <nav class="navbar navbar-default" role="navigation">
         <div class='container'>
           <div class="navbar-header">
@@ -29,15 +28,19 @@
             </button>
           </div>
           <div class="collapse navbar-collapse navbar-test" id="main-nav-collapse">
-            <ul class="nav navbar-nav"  style="display: inline-block">
-              <li><%= link_to root_path,        class: "navbar-brand hvr-float-shadow" do %>Profiles<% end %></li>         
-              <li><%= link_to resume_path,      class: "navbar-brand hvr-float-shadow" do %>Resume<%   end %></li>   
-              <li><%= link_to projects_path,    class: "navbar-brand hvr-float-shadow" do %>Projects<% end %></li>   
-              <li><%= link_to new_contact_path, class: "navbar-brand hvr-float-shadow" do %>Contact<%  end %></li>
+            <ul class="nav navbar-nav">
+              <li class="navbar-brand nav-item <%= "active" if current_page?(root_path) %>">
+                <%= link_to "Profiles", root_path %></li>                
+              <li class="navbar-brand nav-item <%= "active" if current_page?(resume_path) %>">
+                <%= link_to "Resume", resume_path %></li>                
+              <li class="navbar-brand nav-item <%= "active" if current_page?(projects_path) %>">
+                <%= link_to "Projects", projects_path %></li>                
+              <li class="navbar-brand nav-item <%= "active" if current_page?(new_contact_path) %>">
+                <%= link_to "Contact", new_contact_path %></li>  
             </ul>
-          </div><!-- /.navbar-collapse -->
+          </div><!-- collapse navbar-collapse -->
         </div>
-      </nav>
+      </nav><!-- navbar navbar-default -->
       
       <div class="container alert-width text-center">
         <% flash.each do |type,msg| %>
