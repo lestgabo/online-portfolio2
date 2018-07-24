@@ -23,10 +23,12 @@ body {
   font-weight: bold;
 }
 
+// size of profile icons
 .fa {
   font-size: 120px;
 }
 
+// resizing the svg icon of playstation
 svg:not(:root) {
   overflow: hidden;
   width: 110px;
@@ -57,7 +59,7 @@ svg:not(:root) {
 }
 
 // Background gradient
-.navbar, .home-callout, .home-callout-contact, .not-name-container {
+.navbar, .home-callout, .home-callout-contact, .not-name-container, .home-callout-parts {
   //Gradient provided by @_ighosh at uiGradients.com
   // ServQuick from uiGradients.com
   background: #ece9e6; /* fallback for old browsers */
@@ -152,18 +154,6 @@ svg:not(:root) {
   margin-bottom: 0px;
 }
 
-.home-callout {
-  color:323232;
-  margin-top: -60px;
-  padding-top: 30px;
-  padding-bottom: 60px;
-  padding-left: 0px;
-  padding-right: 0px; 
-  // 1vh = 1% of browser screen height
-  // height: 100vh;
-  height: 100% auto;
-  
-}
 
 // contact page well
 #contact-h1 {
@@ -172,14 +162,14 @@ svg:not(:root) {
 
 // style of container for the contact page
 // padding-bottom=360.50px so it reaches the bottom of a 1920x1080 monitor
-.home-callout-contact {
-  color:323232;
+.home-callout-contact, .home-callout-parts {
   margin-top: -10px;
   padding-top: 30px;
-  padding-bottom: 360.50px;
-  //padding-bottom: 20%;
+  // padding-bottom: 360.50px;
+  // padding-bottom: 200px;
   padding-left: 0px;
   padding-right: 0px; 
+  height: 100vh;
 }
 
 .not-name-container {
