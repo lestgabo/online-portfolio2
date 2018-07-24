@@ -1,4 +1,11 @@
 Rails.application.configure do
+  
+  # https://stackoverflow.com/questions/36986925/how-do-i-display-svg-image-in-rails
+  config.assets.precompile += %w( '.svg' )  
+  # Must include to get inline SVGs to work in deploy
+  config.assets.css_compressor = :sass
+
+
   # Settings specified here will take precedence over those in config/application.rb.
 
   # Code is not reloaded between requests.
