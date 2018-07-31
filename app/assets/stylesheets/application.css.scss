@@ -32,11 +32,15 @@ body {
   font-size: 120px;
 }
 
-// resizing the svg icon of playstation
+// resizing the svg icon of playstation and hackerrank
 svg:not(:root) {
   overflow: hidden;
   width: 110px;
-  // height: auto;
+  // height: 110px;
+}
+
+.hackerrank {
+  margin-top: 0px;
 }
 
 // tabs, using padding to make tabs

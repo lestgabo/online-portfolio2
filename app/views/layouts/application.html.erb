@@ -9,7 +9,8 @@
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
     <%= csrf_meta_tags %>
     <!-- favicon for icons -->
-    <link rel="icon" type="image/png" href="/assets/favicon.png">
+    <!--<link rel="icon" type="image/png" href="/assets/favicon.png">-->
+    <%= favicon_link_tag asset_path('lestleygabo.png'), :rel => 'icon', :type =>  'image/png' %>
   </head>
 
   <body>
