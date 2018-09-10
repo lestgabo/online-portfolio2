@@ -2,15 +2,17 @@
 <div class="home-callout-parts text-center container-fluid">
   <div class="container text-center">
     <!--<h1 ><strong> Profiles </strong></h1>-->
-      <!-- first row -->
+    
+    <!-- first row -->
     <div class="row">  
-      <div class="col-md-offset-3 col-md-3">
+      <div class="col-md-3">
         <%= link_to "//www.linkedin.com/in/lestgabo/", 
         class:"hvr-float-shadow", rel:"nofollow noopener", target: "_blank" do %>
           <i class= "fa fa-linkedin-square"></i>
           <h3>LinkedIn</h3>
         <% end %>
       </div>
+      
       <div class="col-md-3">
         <%= link_to "//github.com/lestgabo", 
         class:"hvr-float-shadow", rel:"nofollow noopener", target: "_blank" do %>
@@ -18,18 +20,15 @@
           <h3>GitHub</h3>
         <% end %>
       </div>
-    </div>  
-
-<br>
-        <!-- row -->
-    <div class="row">  
-      <div class="col-md-offset-3 col-md-3">
+      
+      <div class="col-md-3">
         <%= link_to "https://www.facebook.com/notthinkingstraight", 
         class:"hvr-float-shadow", rel:"nofollow noopener", target: "_blank" do %>
           <i class= "fa fa-facebook-square"></i>
           <h3>Facebook</h3>
         <% end %>
       </div>
+      
       <div class="col-md-3">
         <%= link_to "https://www.instagram.com/lestgabo/", 
         class:"hvr-float-shadow", rel:"nofollow noopener", target: "_blank" do %>
@@ -37,18 +36,28 @@
           <h3>Instagram</h3>
         <% end %>
       </div>
-    </div>    
-    
+      
+    </div><!-- end of first row -->
 <br>
-        <!-- row -->
+    <!-- second row -->
     <div class="row">
-      <div class="col-md-offset-3 col-md-3">
+      <div class="col-md-3">
+        <%= link_to "//www.hackerrank.com/beeftosino", 
+        class:"hvr-float-shadow", rel:"nofollow noopener", target: "_blank" do %>
+          <!--<i class= "fa fa-h-square"></i>-->
+          <i class="fa"><%= show_svg("hackerrank-brands.svg") %></i>
+          <h3 class="hackerrank">HackerRank</h3>
+        <% end %>
+      </div>      
+      
+      <div class=" col-md-3"><!--col-md-offset-3-->
         <%= link_to "https://steamcommunity.com/id/notthinkingstraight", 
         class:"hvr-float-shadow", rel:"nofollow noopener", target: "_blank" do %>
           <i class= "fa fa-steam"></i>
           <h3>Steam</h3>
         <% end %>
-      </div>        
+      </div>    
+      
       <div class="col-md-3">
         <%= link_to "https://psnprofiles.com/yelnatz", 
         class:"hvr-float-shadow", rel:"nofollow noopener", target: "_blank" do %>
@@ -57,19 +66,7 @@
           <h3>Playstation</h3>
         <% end %>
       </div>      
-    </div>   
-    
-<br>
-        <!-- last row -->
-    <div class="row">
-      <div class="col-md-offset-3 col-md-3">
-        <%= link_to "//www.hackerrank.com/beeftosino", 
-        class:"hvr-float-shadow", rel:"nofollow noopener", target: "_blank" do %>
-          <!--<i class= "fa fa-h-square"></i>-->
-          <i class="fa"><%= show_svg("hackerrank-brands.svg") %></i>
-          <h3 class="hackerrank">HackerRank</h3>
-        <% end %>
-      </div>      
+
       <div class="col-md-3">
         <%= link_to "https://myanimelist.net/animelist/beeftosino?status=2", 
         class:"hvr-float-shadow", rel:"nofollow noopener", target: "_blank" do %>
@@ -77,7 +74,8 @@
           <h3>MyAnimeList</h3>
         <% end %>
       </div>
-    </div>   
+      
+    </div>  <!-- end of second row -->
     
   </div> <!-- /div row of Container for Profiles -->
    
