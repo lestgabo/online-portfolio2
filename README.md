@@ -1,9 +1,10 @@
 # README
 
-Lestley Gabo resume and links
+Lestley Gabo resume, profiles, labs, and projects.
 
-Going to add pdf files here.
-The pdf files will be my resume, labs, or projects.
-
-Created version 2 so I don't have to delete the old domain.
-The new domain is friendlier at: lestleygabo.herokuapp.com
+Built using Ruby on Rails.
+Used fontawesome for the icons.
+Used Bootstrap to pretty up front end.
+Used Google Drive to hold pdf files.
+Used SendGrid for mailer to contact me.
+Deployed to Heroku.
