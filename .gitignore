@@ -26,3 +26,6 @@ sitemap.xml.gz
 
 # Ignore secrets .yml
 /config/*.yml
+/config/secrets.yml
+*yml
+.env
