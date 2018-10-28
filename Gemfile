@@ -1,4 +1,5 @@
 source 'https://rubygems.org'
+ruby '2.3.0'
 
 # For secrets
 gem 'dotenv-rails', groups: [:development, :test]
