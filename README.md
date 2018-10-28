@@ -7,7 +7,7 @@ Built using Ruby on Rails
 
 Used fontawesome for the icons  
 
-Used dotenv for env secrets
+Used dotenv for .env secrets (using Heroku, therefore need secrets.yml in GitHub)
 
 Used Bootstrap to pretty up front end  
 
